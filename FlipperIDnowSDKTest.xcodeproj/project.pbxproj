@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D3DB6FB877441F3D20A617 /* libPods-FlipperIDnowSDKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A3A5199EC6ECDF59339582 /* libPods-FlipperIDnowSDKTest.a */; };
 		E2ED7D47268DB0C10005A999 /* FlipperIDnowSDKTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED7D46268DB0C10005A999 /* FlipperIDnowSDKTestApp.swift */; };
 		E2ED7D49268DB0C10005A999 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED7D48268DB0C10005A999 /* ContentView.swift */; };
 		E2ED7D4B268DB0C30005A999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2ED7D4A268DB0C30005A999 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0547E5A014FEF7B1068CCB /* Pods-FlipperIDnowSDKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperIDnowSDKTest.debug.xcconfig"; path = "Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest.debug.xcconfig"; sourceTree = "<group>"; };
+		67A3A5199EC6ECDF59339582 /* libPods-FlipperIDnowSDKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperIDnowSDKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31363F40D66C999897E9400 /* Pods-FlipperIDnowSDKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperIDnowSDKTest.release.xcconfig"; path = "Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest.release.xcconfig"; sourceTree = "<group>"; };
 		E2ED7D43268DB0C10005A999 /* FlipperIDnowSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipperIDnowSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2ED7D46268DB0C10005A999 /* FlipperIDnowSDKTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipperIDnowSDKTestApp.swift; sourceTree = "<group>"; };
 		E2ED7D48268DB0C10005A999 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D3DB6FB877441F3D20A617 /* libPods-FlipperIDnowSDKTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA0754E0C8E48F0E9F8211B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C0547E5A014FEF7B1068CCB /* Pods-FlipperIDnowSDKTest.debug.xcconfig */,
+				B31363F40D66C999897E9400 /* Pods-FlipperIDnowSDKTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C427E64959557D87E8BFFE50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67A3A5199EC6ECDF59339582 /* libPods-FlipperIDnowSDKTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2ED7D3A268DB0C10005A999 = {
 			isa = PBXGroup;
 			children = (
 				E2ED7D45268DB0C10005A999 /* FlipperIDnowSDKTest */,
 				E2ED7D44268DB0C10005A999 /* Products */,
+				AA0754E0C8E48F0E9F8211B3 /* Pods */,
+				C427E64959557D87E8BFFE50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2ED7D52268DB0C30005A999 /* Build configuration list for PBXNativeTarget "FlipperIDnowSDKTest" */;
 			buildPhases = (
+				0CB61EF8F291BBD92016C47B /* [CP] Check Pods Manifest.lock */,
 				E2ED7D3F268DB0C10005A999 /* Sources */,
 				E2ED7D40268DB0C10005A999 /* Frameworks */,
 				E2ED7D41268DB0C10005A999 /* Resources */,
+				C457FB4C835BDA652EC93E23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB61EF8F291BBD92016C47B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipperIDnowSDKTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C457FB4C835BDA652EC93E23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2ED7D3F268DB0C10005A999 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		E2ED7D53268DB0C30005A999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0547E5A014FEF7B1068CCB /* Pods-FlipperIDnowSDKTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +355,7 @@
 		};
 		E2ED7D54268DB0C30005A999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B31363F40D66C999897E9400 /* Pods-FlipperIDnowSDKTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
