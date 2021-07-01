@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		E2ED7D49268DB0C10005A999 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED7D48268DB0C10005A999 /* ContentView.swift */; };
 		E2ED7D4B268DB0C30005A999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2ED7D4A268DB0C30005A999 /* Assets.xcassets */; };
 		E2ED7D4E268DB0C30005A999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2ED7D4D268DB0C30005A999 /* Preview Assets.xcassets */; };
+		E2ED7DEF268DD3BC0005A999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED7DEE268DD3BC0005A999 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E2ED7D4A268DB0C30005A999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2ED7D4D268DB0C30005A999 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2ED7D4F268DB0C30005A999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2ED7DEE268DD3BC0005A999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,6 @@
 				4C0547E5A014FEF7B1068CCB /* Pods-FlipperIDnowSDKTest.debug.xcconfig */,
 				B31363F40D66C999897E9400 /* Pods-FlipperIDnowSDKTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +83,7 @@
 				E2ED7D4A268DB0C30005A999 /* Assets.xcassets */,
 				E2ED7D4F268DB0C30005A999 /* Info.plist */,
 				E2ED7D4C268DB0C30005A999 /* Preview Content */,
+				E2ED7DEE268DD3BC0005A999 /* AppDelegate.swift */,
 			);
 			path = FlipperIDnowSDKTest;
 			sourceTree = "<group>";
@@ -106,7 +108,7 @@
 				E2ED7D40268DB0C10005A999 /* Frameworks */,
 				E2ED7D41268DB0C10005A999 /* Resources */,
 				C457FB4C835BDA652EC93E23 /* [CP] Embed Pods Frameworks */,
-				ED543E44D586840B22E65777 /* [CP] Copy Pods Resources */,
+				C70023083BE0C9F7C6937FA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,7 +203,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED543E44D586840B22E65777 /* [CP] Copy Pods Resources */ = {
+		C70023083BE0C9F7C6937FA5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2ED7DEF268DD3BC0005A999 /* AppDelegate.swift in Sources */,
 				E2ED7D49268DB0C10005A999 /* ContentView.swift in Sources */,
 				E2ED7D47268DB0C10005A999 /* FlipperIDnowSDKTestApp.swift in Sources */,
 			);

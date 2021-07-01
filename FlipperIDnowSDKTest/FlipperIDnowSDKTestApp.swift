@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct FlipperIDnowSDKTestApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
