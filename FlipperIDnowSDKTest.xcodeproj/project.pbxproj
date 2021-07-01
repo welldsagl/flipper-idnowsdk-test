@@ -106,6 +106,7 @@
 				E2ED7D40268DB0C10005A999 /* Frameworks */,
 				E2ED7D41268DB0C10005A999 /* Resources */,
 				C457FB4C835BDA652EC93E23 /* [CP] Embed Pods Frameworks */,
+				ED543E44D586840B22E65777 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +199,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED543E44D586840B22E65777 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperIDnowSDKTest/Pods-FlipperIDnowSDKTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
